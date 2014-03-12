@@ -1,0 +1,12 @@
+<h1>Search Results</h1>
+<h3>Name</h3>
+<span><%=@user[0]['full_name']%></span>
+
+<h3>Bio</h3>
+<span><%=@user[0]['bio']%></span>
+
+<h3>Username</h3>
+<span><%=@user[0]['username']%></span>
+
+<h3>Profile Pic</h3>
+<%= image_tag(@user[0]['profile_picture']) %>

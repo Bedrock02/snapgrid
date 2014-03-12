@@ -1,0 +1,6 @@
+<h1>Hello <%= "#{@user.username}" %></h1>
+<h3>Your Recent Pictures</h3>
+<% for media in @client.user_recent_media do %>
+	<img src= <%= media.images.thumbnail.url %>>
+<% end %>
+

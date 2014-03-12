@@ -1,0 +1,10 @@
+<h1>Instagram</h1>
+
+<h3>Do a Quick Search</h3>
+<%= form_tag("/search_user", method: "get") do %>
+  <%= label_tag(:user, "Search User:") %>
+  <%= text_field_tag(:user) %>
+  <%= submit_tag("Search") %>
+<% end %>
+
+<h3>Or Look Yourself Up</h3>
